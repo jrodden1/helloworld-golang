@@ -10,8 +10,19 @@ if any other word is used (like 'package cookies'), it will be a reusable / help
 Also note, a package main file MUST have a func called main()
 */
 
+//this line allows us to import code from another package into ours.
 import "fmt"
 
+// 'fmt' specifically does printing to the terminal -- kind of like "puts" in ruby
+// golang.org/pkg has a lot of documentation about built in / standard packages.
+
+/*
+short for Function - very similar to javascript / ruby methods etc.
+func -> tells we are going to declare a function
+main -> sets the name of the function
+() -> list of args to pass to the function
+{} -> inside the curlies is the code that will run when this fn is called.
+*/
 func main() {
 	fmt.Println("Hello World!")
 }
@@ -22,3 +33,8 @@ func main() {
 // go fmt, formats all the code in each file in the current directory
 // go install and go get, manages packages
 // go test runs any test files associated with the project.
+
+// as for overall organization for a file.
+// package main - Package Declaration (who / what am I)
+// import fmt - import other packages that we need - from standard lib or from reusable packages
+// declare functions, tell GO to do things
